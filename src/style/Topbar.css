@@ -1,0 +1,47 @@
+.top-wrap{
+    position: relative;
+    overflow: hidden;
+    width: 100dvw;
+    height: 300px;
+  }
+  .top-title{
+    font-size: 3.5rem;
+    position: absolute;
+    top : 160px;
+    left: 30px;
+    color: rgb(6, 13, 46);
+  }
+  .top-slogan{
+    position: absolute;
+    top : 260px;
+    left: 45px;
+    color: black;
+  }
+  .top-logo-wrap{
+    position: absolute;
+    top: 110px;
+    left: 250px;
+    height :200px;
+    width: 200px;
+    overflow: hidden;
+  
+  }
+  .top-logo-image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+.logowrap{
+    height: 60px;
+    width : 80px ;
+    overflow: hidden;
+  }
+  .logoimg{
+   height : 100%;
+   width: 100%;
+    object-fit: contain ;
+  
+  }
+  

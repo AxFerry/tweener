@@ -1,0 +1,63 @@
+.navbar{
+    background-image: linear-gradient(var(--nav-background),black );
+    color: var(--nav-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .links{
+    display: flex;
+    justify-content: space-around;
+    width : 25vw;
+    align-items: end;
+    text-decoration: none;
+    
+  }
+  .links  a{
+    text-decoration: none;
+    color: var(--nav-color);
+  }
+  
+  .switch{
+   visibility: hidden;
+  }
+  .switch + label {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--nav-background);
+  }
+  
+  .switch + label::before {
+   
+    visibility: visible;
+    position: absolute;
+    height: 1em;
+    width: 2.5em;
+    content: "";
+    background-color: var(--switch-background);
+    border-radius: 1rem;
+    margin-right: 0.5em;
+    right: 0.5em;
+    top:1.5em; 
+    transition: background-color 250ms ease-in-out;
+    
+  }
+  .switch + label::after {
+    content: "";
+    border-radius: 1rem;
+    right: 2.4em;
+    top:1.6em; 
+   
+    visibility: visible;
+    position: absolute;
+    background-color: var(--switch-body);
+    height: 0.8em;
+    width: 0.8em;
+    transition: background-color 250ms ease-in-out , transform 250ms ease-in-out;
+  
+  }
+  .switch:checked + label::after{
+    transform: translate(150%);
+  }

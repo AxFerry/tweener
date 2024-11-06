@@ -1,0 +1,13 @@
+
+
+#root {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  align-items: center;
+  transition: background-color 250ms ease-in-out ;
+
+}
+
+

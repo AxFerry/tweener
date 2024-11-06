@@ -1,0 +1,33 @@
+.formWrap{
+    border-radius: 2em;
+    background-image: linear-gradient(var(--nav-background), black);
+    align-items: center;
+    height: 400px;
+    margin-left: 25dvw;
+    margin-right: 25dvw;
+    width: 50dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  form{
+    margin: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .inputwrap{
+  width: 45dvw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  .form-inputs{
+    border-radius: 0.5rem;
+  }
+  #subbtn{
+    width: 200px;
+    align-self: center;
+  }
