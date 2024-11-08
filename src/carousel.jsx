@@ -9,12 +9,13 @@ import b_grigio from "./assets/b_grigio.jpg"
 import b_rosso from "./assets/b_rosso.jpg"
 import "./style/Carousel.css"
 const IMAGES = [ b_beige1 , b_beige2 , b_bianco , b_bianco1 ,b_grigio, b_rosso ,b_verde ,b_verde1, b_verde3]
-import { useState } from "react"
+import { useState ,useEffect} from "react"
 import { ArrowBigLeft } from "lucide-react"
 import { ArrowBigRight } from "lucide-react"
 
 export function Carousel (){
     const[imageIndex , setImageIndex] = useState(0)
+
     function showNext (){
         setImageIndex(Index => {
             if(Index == 0) {return IMAGES.length -1}
@@ -29,7 +30,17 @@ export function Carousel (){
         })
     
     }
-    
+    function useInterval( callback , delay){
+        useEffect(()=>{
+            const intervalID =setInterval(callback, delay);
+            return() => clearInterval(intervalID);
+        },[callback,delay]);
+        
+    }
+
+    useInterval(()=>{
+        showNext();
+    }, 3000)
 
     return(
     

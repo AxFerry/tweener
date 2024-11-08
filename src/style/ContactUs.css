@@ -3,13 +3,11 @@
     background-image: linear-gradient(var(--nav-background), black);
     align-items: center;
     height: 400px;
-    margin-left: 25dvw;
-    margin-right: 25dvw;
-    width: 50dvw;
+    width: 60dvw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 30px;
+   
   }
   form{
     margin: 30px;
@@ -30,4 +28,137 @@
   #subbtn{
     width: 200px;
     align-self: center;
+  }
+  .confirm-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .confirm-div-text{
+    color: green;
+    
+  }
+  .form-wrap-wrap{
+    margin-top: 30px;
+    height: 450px;
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form-wrap-side{
+    width: 35dvw;
+    height: 400px;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-image: linear-gradient(var(--nav-background), black);
+    overflow: hidden;
+    
+
+  }
+  .form-side-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .form-side-text{
+    width: 35dvw;
+    height: 400px;
+    z-index: 2;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-350px);
+   
+  }
+  .form-side-p1{
+   
+    font-size: larger;
+    animation: slide1 4s ease-in-out forwards ;
+    
+  }
+  .form-side-p2{
+    animation: slide2 7s ease-in-out forwards ;
+    
+  }
+  .form-side-p3{
+    animation: slide2 10s ease-in-out forwards;
+  }
+  .form-side-p4{
+    animation: slide2 14s ease-in-out forwards;
+  }
+
+
+@keyframes slide1 {
+  0%{
+    scale: 0;
+    transform: translateY(-100px);
+  }
+  100%{
+    scale: 1.5;
+    transform: translateY(0);
+  }
+}
+@keyframes slide2 {
+  0%{
+    scale: 0;
+    transform: translateX(300px);
+  }
+  100%{
+    scale: 1.2;
+    transform: translateX(0);
+  }
+}
+@keyframes slide3 {
+  0%{
+    scale: 0;
+    transform: translateX(-300px);
+  }
+  100%{
+    scale: 1.2;
+    transform: translateX(0);
+  }
+}
+@keyframes slide4 {
+  0%{
+    scale: 0;
+    transform: translateY(300px);
+  }
+  100%{
+    scale: 1.1;
+    transform: translateY(0);
+  }
+}
+
+  
+
+
+  @media screen and (max-width : 600px){
+    .formWrap{
+      margin: 0;
+      margin-top: 30px;
+      width: 100dvw;
+    }
+    .form-wrap-side{
+     
+      align-items: center;
+      width: 80dvw;
+      height: 400px;
+    }
+    .form-side-text{
+      translate: 100px;
+    }
+
+   
+    .form-wrap-wrap{
+      height: 850px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .imputspan{
+      display:none;
+    }
+
   }

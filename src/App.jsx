@@ -15,18 +15,15 @@ export const App= () => {
   return (
     <>
       <div data-theme={ isDark? "dark" : "light"}>
-       <Navbar
-       
+       <Navbar  
        isChecked={isDark}
        handleChange={()=> setTheme(!isDark)}
        />
        <TopBar />
        <Services />
       <ContactUs/>
-     
       <Carousel />
       <Footer />
-    
       </div>
       </>
   )

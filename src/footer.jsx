@@ -26,7 +26,7 @@ export const Footer = () =>{
                 
             </div>
             <div className="foot-collabs">
-                <p>I nostri marchi :</p>
+                
                 <div className="foot-collab-card">
                     <img src={mitsu} className="foot-collab-img" />
                 </div>
@@ -44,7 +44,9 @@ export const Footer = () =>{
                 </div>
             </div>
             </div>
-            <div className="foot-close"></div>
+            <div className="foot-close">
+                
+            </div>
         </div>
     )
 }

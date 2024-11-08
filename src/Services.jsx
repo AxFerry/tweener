@@ -4,6 +4,7 @@ import ex2 from "./assets/esagono2.png"
 import ex3 from "./assets/esagono3.png"
 import "./style/Services.css"
 
+
 export const Services = () => {
 
  
@@ -17,7 +18,7 @@ export const Services = () => {
                     <h2>Installazione</h2>
                     <div className="service-card-extra">
                         <p>Sopralluogo gratuito</p>
-                        <p>Split singoli , multi o canalizzati</p>
+                        <p>Monosplit , multisplit o canalizzati</p>
                         <p>Supporto per le pratiche di detrazione</p>
                     </div>
                 </div>
@@ -32,7 +33,7 @@ export const Services = () => {
                     <div className="service-card-text" > 
                     <h2>Manutenzione</h2>
                     <div className="service-card-extra">
-                        <p>Sopralluogo gratuito</p>
+                        <p>Tecnici specializzati a vostra disposizione</p>
                         <p>Soluzioni specifiche per le vostre esigenze</p>
                         <p>Supporto per le pratiche di detrazione</p>
                     </div>
@@ -45,11 +46,11 @@ export const Services = () => {
                 <div className="service-card-img-wrap">
                     <img src={ex3} className="service-card-img" name="sostituzione"  />
                     <div className="service-card-text" > 
-                    <h2>Sostituzione</h2>
+                    <h2>Altri Servizi</h2>
                     <div className="service-card-extra">
-                        <p>Sopralluogo gratuito</p>
-                        <p>Split singoli , multi o canalizzati</p>
-                        <p>Supporto per le pratiche di detrazione</p>
+                        <p>Pompa di calore e riscaldamento a pavimento </p>
+                        <p>Impianti di ventilazione assistita</p>
+                        <p>Altro</p>
                     </div>
                 </div>
              

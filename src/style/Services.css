@@ -26,6 +26,7 @@
     position: absolute;
     width: 100%;
     border-radius: 1rem;
+    font-size: large;
     color: black;
     left: 0;
     bottom: 0;
@@ -36,6 +37,20 @@
     transition: height 300ms ease-in-out;
     background-color: rgba(41, 68, 224, 0.2);
 }
+@media screen and (max-width : 600px){
+
+    .service-wrap{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .service-card{
+        margin-top: 30px;
+    }
+}
+
 
 
 

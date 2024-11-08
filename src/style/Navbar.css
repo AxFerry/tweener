@@ -1,15 +1,41 @@
 .navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
     background-image: linear-gradient(var(--nav-background),black );
     color: var(--nav-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
+  .logowrap{
+    cursor: pointer;
+    height: 60px;
+    width : 80px ;
+    overflow: hidden;
+  }
+
+  .logoimg{
+   height : 100%;
+   width: 100%;
+    object-fit: contain ;
+  
+  }
+  
   .links{
     display: flex;
+    position: fixed;
+    top: 4em;
+    left: 0;
+    height: 0;
+    z-index: 2;
+    flex-direction: column;
     justify-content: space-around;
     width : 25vw;
-    align-items: end;
+    overflow: hidden;
+    align-items: center;
+    transition: all 200ms ease-in-out;
     text-decoration: none;
     
   }
@@ -17,6 +43,7 @@
     text-decoration: none;
     color: var(--nav-color);
   }
+
   
   .switch{
    visibility: hidden;
@@ -60,4 +87,18 @@
   }
   .switch:checked + label::after{
     transform: translate(150%);
+  }
+  .logowrap:hover {
+   scale: 1.1;
+   .links{
+    height: 12em;
+    background-color: black;
+   }
+  }
+
+  @media screen and (max-width : 600px){
+    .links{
+      display: none;
+    }
+
   }

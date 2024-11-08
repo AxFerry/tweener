@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./style/ContactUs.css"
 import V from "./assets/V.png"
+import house from "./assets/house.jpeg"
 
 
 
@@ -46,7 +47,7 @@ export const ContactUs = () =>{
     }
 
     return (
-        
+        <div className="form-wrap-wrap">
         <div className="formWrap">
             <h2 data-check={check? "no": "ok"}>Richiedi un sopralluogo gratuito :</h2>
             <form data-check={check? "no": "ok"} onSubmit={handleSubmit}>
@@ -104,12 +105,25 @@ export const ContactUs = () =>{
             <div className="confitm-div" data-visible = {isVisible? "no" : "yes"} style={{overflow : "hidden"}}>
                 <img src={V} style={{
                     objectFit: "contain" ,
-                    height: "100%" ,
-                    width: "100%" }}/>
+                    height: "50%" ,
+                    width: "50%" }} />
                <div className="confirm-div-text">
                  <p>Richiesta effettuata con successo</p>
                 <p> vi contatteremo appena possibile</p></div>
+                
             </div>
+        </div>
+        <div className="form-wrap-side">
+          <img src={house} className="form-side-img" />
+          <div className="form-side-text">
+            <p className="form-side-p1">Contattaci per : </p>
+            <p className="form-side-p2">Installazioni </p>
+            <p className="form-side-p3">Manutenzioni </p>
+            <p className="form-side-p4">Efficentamento energetico </p>
+          </div>
+         
+
+        </div>
         </div>
 
     )

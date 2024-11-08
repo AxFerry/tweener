@@ -1,4 +1,5 @@
 .top-wrap{
+  margin-top: 3rem;
     position: relative;
     overflow: hidden;
     width: 100dvw;
@@ -33,15 +34,5 @@
   }
 
 
-.logowrap{
-    height: 60px;
-    width : 80px ;
-    overflow: hidden;
-  }
-  .logoimg{
-   height : 100%;
-   width: 100%;
-    object-fit: contain ;
-  
-  }
+
   
