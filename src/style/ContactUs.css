@@ -20,13 +20,14 @@
   width: 45dvw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   }
   .form-inputs{
     border-radius: 0.5rem;
   }
   #subbtn{
-    width: 200px;
+    margin: 20px;
+    width: 100px;
     align-self: center;
   }
   .confirm-div{
@@ -73,22 +74,26 @@
     transform: translateY(-350px);
    
   }
-  .form-side-p1{
+   .form-side-p1{
    
-    font-size: larger;
-    animation: slide1 4s ease-in-out forwards ;
-    
+    font-size: larger;   
   }
-  .form-side-p2{
-    animation: slide2 7s ease-in-out forwards ;
-    
+  .form-wrap-wrap:hover .form-side-p1{
+    animation: slide2 1s ease-in-out forwards ;
   }
-  .form-side-p3{
-    animation: slide2 10s ease-in-out forwards;
+   
+  .form-wrap-wrap:hover .form-side-p2{
+      animation: slide2 2s ease-in-out forwards ;
   }
-  .form-side-p4{
-    animation: slide2 14s ease-in-out forwards;
-  }
+  .form-wrap-wrap:hover .form-side-p3{
+      animation: slide2 3s ease-in-out forwards;
+    }
+    .form-wrap-wrap:hover .form-side-p4{
+      animation: slide2 4s ease-in-out forwards;
+    }
+  
+  
+
 
 
 @keyframes slide1 {
@@ -155,7 +160,7 @@
     .form-wrap-wrap{
       height: 850px;
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     .imputspan{
       display:none;

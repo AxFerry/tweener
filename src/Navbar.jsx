@@ -2,19 +2,26 @@ import { FileText } from "lucide-react"
 import logo from "./assets/log.png"
 import "./style/Navbar.css"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 export const Navbar = ({handleChange , isChecked}) =>{
+    const [showMenu , setShowMenu]= useState(false)
+    function showMenuBar(){
+        setShowMenu(!showMenu);
+
+    }
     
   
   
     return(
         <nav className="navbar">
             <div className="logowrap">
-                <img src={logo} className="logoimg" />
+                <img src={logo} className="logoimg" onClick={showMenuBar}/>
             </div>
-            <div className="links" >
-                <a href="/">Home</a>
-                <a href="/works">Gallery</a>
-                <a href="/service">Contact</a>
+            <div className="links" data-menu={showMenu? true : false}>
+                <Link to='/'>Home</Link>
+                <Link to="/works">Gallery</Link>
+                <Link to="/service">Servizi</Link>
+                <Link to="/contact">Contattaci</Link>
                 
             </div>
             

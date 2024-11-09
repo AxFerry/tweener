@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState , useEffect } from "react";
 import "./style/ContactUs.css"
 import V from "./assets/V.png"
 import house from "./assets/house.jpeg"
@@ -11,14 +11,18 @@ export const ContactUs = () =>{
         setCheck(!check)
         setVisible(!isVisible)
     }
+    const[ wait , setWait ] = useState(5);
     const[ check , setCheck] = useState("no")
     const[ isVisible , setVisible ] = useState("no")
     const[ values , setValues] = useState({
         nome : "",
+        cognome : "",
         email : "",
         telefono : "",
-        paese : ""
+        paese : "",
+        provincia : ""
     })
+  
  
     const onChange = (e) =>{        
         setValues({...values,[e.target.name] : e.target.value})
@@ -40,6 +44,7 @@ export const ContactUs = () =>{
         console.log(values)
 
         confirmForm()
+        
    
         
       }
@@ -49,7 +54,7 @@ export const ContactUs = () =>{
     return (
         <div className="form-wrap-wrap">
         <div className="formWrap">
-            <h2 data-check={check? "no": "ok"}>Richiedi un sopralluogo gratuito :</h2>
+            <h2 data-check={check? "no": "ok"}>Per un sopralluogo gratuito contattaci o compila il form :</h2>
             <form data-check={check? "no": "ok"} onSubmit={handleSubmit}>
                      
               <div className="inputwrap">
@@ -59,6 +64,18 @@ export const ContactUs = () =>{
                 placeholder="Nome"
                 id="nomeImput"
                 value={values.name}
+                type="text"
+                className="form-inputs" 
+                onChange={onChange}/>
+               </div>
+
+               <div className="inputwrap">
+                <span className="imputspan">Cognome :</span>
+               <input 
+                name="cognome"
+                placeholder="Cognome"
+                id="cognomeImput"
+                value={values.cognome}
                 type="text"
                 className="form-inputs" 
                 onChange={onChange}/>
@@ -99,6 +116,17 @@ export const ContactUs = () =>{
                 className="form-inputs" 
                 onChange={onChange}/>  
                 </div>
+                <div className="inputwrap">
+                    <span className="imputspan">Provincia :</span>
+                <input 
+                name="provincia"
+                placeholder="provincia"
+                type="text"
+                value={values.provincia}
+                id="provinciaImput"
+                className="form-inputs" 
+                onChange={onChange}/>  
+                </div>
 
                 <button type="submit" id="subbtn"> Conferma</button>
             </form>
@@ -109,7 +137,8 @@ export const ContactUs = () =>{
                     width: "50%" }} />
                <div className="confirm-div-text">
                  <p>Richiesta effettuata con successo</p>
-                <p> vi contatteremo appena possibile</p></div>
+                <p> vi contatteremo appena possibile</p>
+                <p>tornerai al form fra : {wait}</p></div>
                 
             </div>
         </div>

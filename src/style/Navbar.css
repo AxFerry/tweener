@@ -29,6 +29,7 @@
     top: 4em;
     left: 0;
     height: 0;
+    background-color: var(--bacground-color);
     z-index: 2;
     flex-direction: column;
     justify-content: space-around;
@@ -39,9 +40,15 @@
     text-decoration: none;
     
   }
-  .links  a{
+  [data-menu="true"]{
+    height: 500px;
+    
+  }
+  .links  Link{
     text-decoration: none;
-    color: var(--nav-color);
+    font-size: larger;
+    cursor: pointer;
+    color: black;
   }
 
   
@@ -98,7 +105,8 @@
 
   @media screen and (max-width : 600px){
     .links{
-      display: none;
+      width: 50dvw;
     }
+   
 
   }
