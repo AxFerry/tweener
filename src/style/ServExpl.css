@@ -45,4 +45,10 @@
     .expl-card{
         flex-direction: column;
     }
+      .expl-card-text{
+        width: 90dvw;
+    }
+    .expl-top-text{
+        width: 90dvw;
+    }
 }
