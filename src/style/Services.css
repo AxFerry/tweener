@@ -11,12 +11,33 @@
 .service-card{
     margin-top: 80px;
     position: relative;
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     transition: all 300ms ease-in-out;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+}
+.service-card-img-wrap{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+
+}
+.service-card-img{
+    object-fit: contain;
+    width: 90%;
+    height: 90%;
+
 }
 .service-card:hover{
     scale: 1.2;
+}
+.service-card:hover .service-card-img{
+
+    animation: fade 300ms ease-in-out forwards;
+}
+.service-card:not(:hover) .service-card-img{
+    animation: reappear 300ms ease-in-out forwards;
 }
 .service-card:hover .service-card-text{
     height: 100%;
@@ -27,7 +48,7 @@
     width: 100%;
     border-radius: 1rem;
     font-size: large;
-    color: black;
+    color: var(--text-color);
     left: 0;
     bottom: 0;
     display: flex;
@@ -53,6 +74,27 @@
 
 
 
-
+@keyframes fade {
+    0%{ opacity: 1;
+        transform: translateX(0);
+        width: 100%;
+    }
+    100%{
+        opacity: 0;
+        width: 0%;
+        transform: translateX(-500px);
+    }
+}
+@keyframes reappear {
+    0%{ opacity: 0;
+        width: 0%;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+        transform: translateX(0);
+    }
+}
 
 

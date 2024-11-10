@@ -3,6 +3,7 @@ import ex1 from "./assets/esagono1.png"
 import ex2 from "./assets/esagono2.png"
 import ex3 from "./assets/esagono3.png"
 import "./style/Services.css"
+import { Link } from "react-router-dom"
 
 
 export const Services = () => {
@@ -15,11 +16,11 @@ export const Services = () => {
                 <div className="service-card-img-wrap">
                     <img src={ex1} className="service-card-img" name="installazione"  />
                     <div className="service-card-text" > 
-                    <h2>Installazione</h2>
+                    <Link to="/installazione"><h2>Installazione</h2></Link>
                     <div className="service-card-extra">
-                        <p>Sopralluogo gratuito</p>
-                        <p>Monosplit , multisplit o canalizzati</p>
-                        <p>Supporto per le pratiche di detrazione</p>
+                    <Link to="/installazione"><p>Sopralluogo gratuito</p></Link>
+                    <Link to="/installazione"><p>Monosplit , multisplit o canalizzati</p></Link>
+                    <Link to="/installazione"><p>Supporto per le pratiche di detrazione</p></Link>
                     </div>
                 </div>
                 </div>
@@ -31,32 +32,20 @@ export const Services = () => {
                 name="manutenzione"  >
                     <img src={ex2} className="service-card-img" name="manutenzione"   />
                     <div className="service-card-text" > 
-                    <h2>Manutenzione</h2>
+                    <Link to="/manutenzione"><h2>Manutenzione</h2></Link>
                     <div className="service-card-extra">
-                        <p>Tecnici specializzati a vostra disposizione</p>
-                        <p>Soluzioni specifiche per le vostre esigenze</p>
-                        <p>Supporto per le pratiche di detrazione</p>
+                    <Link to="/manutenzione"><p>Tecnici specializzati a vostra disposizione</p></Link>
+                    <Link to="/manutenzione"><p>Soluzioni specifiche per le vostre esigenze</p></Link>
+                    <Link to="/manutenzione"><p>Supporto per le pratiche di detrazione</p></Link>
                     </div>
                 </div>
                 </div>
                
             </div>
 
-            <div className="service-card" name="sostituzione"  >
-                <div className="service-card-img-wrap">
-                    <img src={ex3} className="service-card-img" name="sostituzione"  />
-                    <div className="service-card-text" > 
-                    <h2>Altri Servizi</h2>
-                    <div className="service-card-extra">
-                        <p>Pompa di calore e riscaldamento a pavimento </p>
-                        <p>Impianti di ventilazione assistita</p>
-                        <p>Altro</p>
-                    </div>
-                </div>
              
-                </div>
-            </div>
-        </div>
+     </div>
+       
 
     )
 }

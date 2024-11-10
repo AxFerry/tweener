@@ -71,28 +71,53 @@
     color: black;
     display: flex;
     flex-direction: column;
-    transform: translateY(-350px);
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-410px);
    
+  }
+  .form-side-p4{
+    font-size: larger;
   }
    .form-side-p1{
    
     font-size: larger;   
   }
+  .form-wrap-wrap:hover .form-side-text{
+    color:var(--text-color)
+  }
   .form-wrap-wrap:hover .form-side-p1{
-    animation: slide2 1s ease-in-out forwards ;
+    animation: slide2 200ms ease-in-out forwards ;
   }
    
   .form-wrap-wrap:hover .form-side-p2{
-      animation: slide2 2s ease-in-out forwards ;
+      animation: slide2 500ms ease-in-out forwards ;
   }
   .form-wrap-wrap:hover .form-side-p3{
-      animation: slide2 3s ease-in-out forwards;
+      animation: slide2 1s ease-in-out forwards;
     }
     .form-wrap-wrap:hover .form-side-p4{
-      animation: slide2 4s ease-in-out forwards;
+      animation: slide2 2s ease-in-out forwards;
+    }
+    .form-wrap-wrap:hover .form-side-img{
+      animation: vanish 1s ease-in  forwards;
     }
   
+@keyframes vanish {
+  0%{
+    opacity: 1;
+    
+    transform: translateX(0);
+  }
+  100%{
+    opacity: 0;
+    
+    transform: translateX(100%);
+
+
+  }
   
+} 
 
 
 

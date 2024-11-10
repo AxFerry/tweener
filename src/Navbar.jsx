@@ -19,7 +19,7 @@ export const Navbar = ({handleChange , isChecked}) =>{
             </div>
             <div className="links" data-menu={showMenu? true : false}>
                 <Link to='/'>Home</Link>
-                <Link to="/works">Gallery</Link>
+                <Link to="/gallery">Gallery</Link>
                 <Link to="/service">Servizi</Link>
                 <Link to="/contact">Contattaci</Link>
                 

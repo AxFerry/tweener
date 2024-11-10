@@ -18,6 +18,9 @@
     width: 500px;
 
 }
+.expl-card-text p{
+    width : 450px;
+}
 .expl-card{
     display: flex;
     flex-direction: row;
@@ -38,17 +41,29 @@
 .expl-card-text{
     width: 500px;
 }
+.expl-card-text p{
+    max-width: 450px;
+}
 @media screen and (max-width : 600px){
     .expl-top{
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .expl-card{
         flex-direction: column;
     }
-      .expl-card-text{
+    .expl-card-text{
         width: 90dvw;
     }
     .expl-top-text{
         width: 90dvw;
+    }
+    .expl-card-text p{
+        max-width: 350px;
+    }
+    .expl-top-text p{
+        max-width: 350px;
     }
 }

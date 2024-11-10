@@ -11,12 +11,22 @@
     top : 160px;
     left: 30px;
     color: rgb(6, 13, 46);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .top-slogan{
     position: absolute;
     top : 260px;
     left: 45px;
     color: black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .top-logo-wrap{
     position: absolute;

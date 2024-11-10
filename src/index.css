@@ -51,6 +51,18 @@ a:hover {
   scale:1.2 ;
   transition: all 200ms ease-in-out;
 }
+Link {
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: inherit;
+
+}
+Link :hover{
+  color: #010ab4;
+  scale:1.2 ;
+  transition: all 200ms ease-in-out;
+
+}
 
 body {
   color: var(--text-color);
@@ -60,15 +72,63 @@ body {
 }
 
 
-nav{
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  width: 100vw;
-  color: var(--text-color);
-  background-color: var(--bacground-color);
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.2;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    
+  }
+  to {
+
+    opacity: 1;
+    scale: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }  
 }
+img{
+ animation-name: appear ;
+ animation-fill-mode: forwards;
+ animation-timeline: view();
+ animation-range: entry 0% ;
 
-
-
-
+}
+p{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h1{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h2{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h3{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+span{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

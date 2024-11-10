@@ -5,6 +5,9 @@ import {App} from './App.jsx'
 import {  createBrowserRouter , RouterProvider } from 'react-router-dom'
 import { AppService } from './AppService'
 import { Lost } from './Lost'
+import { AppManutenz } from './AppManutenz'
+import { AppInstal } from './AppInstal'
+import { AppGallery } from './AppGallery'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +18,18 @@ const router = createBrowserRouter([
   {
     path:'/service',
     element: <AppService/>
+  },
+  {
+    path:'/installazione',
+    element: <AppInstal/>
+  },
+  {
+    path:'/manutenzione',
+    element:<AppManutenz/>
+  },
+  {
+    path:'/gallery',
+    element:<AppGallery/>
   }
 ]);
 

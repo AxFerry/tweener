@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState , useEffect} from 'react'
 import './App.css'
 import { Navbar } from './Navbar.jsx'
 import { Carousel } from './carousel'
@@ -7,11 +7,17 @@ import { ContactUs } from "./ContactUs"
 import { Footer } from "./footer"
 import { ServExpl } from './ServExpl'
 import { Services } from "./Services"
+import  { useLocalStorage} from "use-local-storage"
 
 
 
 export const App= () => {
-  const [isDark, setTheme] = useState(false);
+  
+  const [isDark, setTheme] = useState(JSON.parse(localStorage.getItem("isDark") || false));
+
+  useEffect(()=>{
+    localStorage.setItem("isDark", JSON.stringify(isDark));
+  },[isDark])
 
   return (
     <>
@@ -22,9 +28,7 @@ export const App= () => {
        />
        <TopBar />
        <Services />
-       <ServExpl/>
-      <ContactUs/>
-      <Carousel />
+      <ContactUs />
       <Footer />
       </div>
       </>

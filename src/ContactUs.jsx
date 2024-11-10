@@ -2,6 +2,7 @@ import React, { useState , useEffect } from "react";
 import "./style/ContactUs.css"
 import V from "./assets/V.png"
 import house from "./assets/house.jpeg"
+import { Link } from "react-router-dom";
 
 
 
@@ -138,17 +139,20 @@ export const ContactUs = () =>{
                <div className="confirm-div-text">
                  <p>Richiesta effettuata con successo</p>
                 <p> vi contatteremo appena possibile</p>
-                <p>tornerai al form fra : {wait}</p></div>
+                <p>torna alla home : <Link to="/">Home</Link></p>
+                <p>torna alle foto : <Link to="/gallery">Gallery</Link></p></div>
                 
             </div>
         </div>
         <div className="form-wrap-side">
           <img src={house} className="form-side-img" />
           <div className="form-side-text">
-            <p className="form-side-p1">Contattaci per : </p>
-            <p className="form-side-p2">Installazioni </p>
-            <p className="form-side-p3">Manutenzioni </p>
-            <p className="form-side-p4">Efficentamento energetico </p>
+            <p><h2>I nostri contatti </h2></p>
+            <p className="form-side-p1"><a href="mailto:fcsspdev@gmail.com">E-mail</a> </p>
+            <p className="form-side-p2"><a href="https://wa.me/3479802711">whatsApp</a></p>
+            <p className="form-side-p3"><a href="">Instagram</a> </p>
+            <p className="form-slide-p4"><Link to="/gallery">guarda le foto</Link></p>
+            
           </div>
          
 

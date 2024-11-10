@@ -6,9 +6,17 @@
     background-image: linear-gradient(var(--nav-background),black );
     color: var(--nav-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
+  nav{
+    display: flex;
+    width: 100vw;
+    color: var(--text-color);
+    background-color: var(--bacground-color);
+  }
+  
+  
   .logowrap{
     cursor: pointer;
     height: 60px;
