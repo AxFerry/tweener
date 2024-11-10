@@ -1,0 +1,6 @@
+var n={exports:{}};/*!
+ * bytes
+ * Copyright(c) 2012-2014 TJ Holowaychuk
+ * Copyright(c) 2015 Jed Watson
+ * MIT Licensed
+ */var o;function y(){if(o)return n.exports;o=1,n.exports=d,n.exports.format=u,n.exports.parse=b;var p=/\B(?=(\d{3})+(?!\d))/g,m=/(?:\.0*|(\.[^0]+)0+)$/,i={b:1,kb:1024,mb:1<<20,gb:1<<30,tb:Math.pow(1024,4),pb:Math.pow(1024,5)},c=/^((-|\+)?(\d+(?:\.\d+)?)) *(kb|mb|gb|tb|pb)$/i;function d(r,e){return typeof r=="string"?b(r):typeof r=="number"?u(r,e):null}function u(r,e){if(!Number.isFinite(r))return null;var a=Math.abs(r),s=e&&e.thousandsSeparator||"",x=e&&e.unitSeparator||"",g=e&&e.decimalPlaces!==void 0?e.decimalPlaces:2,B=!!(e&&e.fixedDecimals),t=e&&e.unit||"";(!t||!i[t.toLowerCase()])&&(a>=i.pb?t="PB":a>=i.tb?t="TB":a>=i.gb?t="GB":a>=i.mb?t="MB":a>=i.kb?t="KB":t="B");var h=r/i[t.toLowerCase()],f=h.toFixed(g);return B||(f=f.replace(m,"$1")),s&&(f=f.split(".").map(function(l,v){return v===0?l.replace(p,s):l}).join(".")),f+x+t}function b(r){if(typeof r=="number"&&!isNaN(r))return r;if(typeof r!="string")return null;var e=c.exec(r),a,s="b";return e?(a=parseFloat(e[1]),s=e[4].toLowerCase()):(a=parseInt(r,10),s="b"),isNaN(a)?null:Math.floor(i[s]*a)}return n.exports}export{y as r};

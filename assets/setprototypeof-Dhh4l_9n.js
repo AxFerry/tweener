@@ -1,0 +1,1 @@
+var f=Object.setPrototypeOf||({__proto__:[]}instanceof Array?o:n);function o(t,r){return t.__proto__=r,t}function n(t,r){for(var e in r)Object.prototype.hasOwnProperty.call(t,e)||(t[e]=r[e]);return t}export{f as s};

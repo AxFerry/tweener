@@ -1,0 +1,5 @@
+import{r as f}from"./body-parser-ClE_Zh4T.js";/*!
+ * etag
+ * Copyright(c) 2014-2016 Douglas Christopher Wilson
+ * MIT Licensed
+ */var l=g,s=f,n=f.Stats,i=Object.prototype.toString;function o(t){if(t.length===0)return'"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk"';var e=s.createHash("sha1").update(t,"utf8").digest("base64").substring(0,27),r=typeof t=="string"?Buffer.byteLength(t,"utf8"):t.length;return'"'+r.toString(16)+"-"+e+'"'}function g(t,e){if(t==null)throw new TypeError("argument entity is required");var r=m(t),u=e&&typeof e.weak=="boolean"?e.weak:r;if(!r&&typeof t!="string"&&!Buffer.isBuffer(t))throw new TypeError("argument entity must be string, Buffer, or fs.Stats");var a=r?c(t):o(t);return u?"W/"+a:a}function m(t){return typeof n=="function"&&t instanceof n?!0:t&&typeof t=="object"&&"ctime"in t&&i.call(t.ctime)==="[object Date]"&&"mtime"in t&&i.call(t.mtime)==="[object Date]"&&"ino"in t&&typeof t.ino=="number"&&"size"in t&&typeof t.size=="number"}function c(t){var e=t.mtime.getTime().toString(16),r=t.size.toString(16);return'"'+r+"-"+e+'"'}export{l as e};

@@ -1,0 +1,1 @@
+var h=i;function e(n,r,f){for(var t=0;t<n.length;t++){var a=n[t];f>0&&Array.isArray(a)?e(a,r,f-1):r.push(a)}return r}function o(n,r){for(var f=0;f<n.length;f++){var t=n[f];Array.isArray(t)?o(t,r):r.push(t)}return r}function i(n,r){return r==null?o(n,[]):e(n,[],r)}export{h as a};
