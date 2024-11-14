@@ -1,5 +1,0 @@
-var i={exports:{}};/*!
- * vary
- * Copyright(c) 2014-2017 Douglas Christopher Wilson
- * MIT Licensed
- */i.exports=g;i.exports.append=f;var p=/^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;function f(e,a){if(typeof e!="string")throw new TypeError("header argument is required");if(!a)throw new TypeError("field argument is required");for(var r=Array.isArray(a)?a:u(String(a)),t=0;t<r.length;t++)if(!p.test(r[t]))throw new TypeError("field argument contains an invalid header name");if(e==="*")return e;var n=e,s=u(e.toLowerCase());if(r.indexOf("*")!==-1||s.indexOf("*")!==-1)return"*";for(var o=0;o<r.length;o++){var v=r[o].toLowerCase();s.indexOf(v)===-1&&(s.push(v),n=n?n+", "+r[o]:r[o])}return n}function u(e){for(var a=0,r=[],t=0,n=0,s=e.length;n<s;n++)switch(e.charCodeAt(n)){case 32:t===a&&(t=a=n+1);break;case 44:r.push(e.substring(t,a)),t=a=n+1;break;default:a=n+1;break}return r.push(e.substring(t,a)),r}function g(e,a){if(!e||!e.getHeader||!e.setHeader)throw new TypeError("res argument is required");var r=e.getHeader("Vary")||"",t=Array.isArray(r)?r.join(", "):String(r);(r=f(t,a))&&e.setHeader("Vary",r)}var y=i.exports;export{y as v};

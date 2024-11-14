@@ -1,6 +1,0 @@
-import{r as e}from"./body-parser-ClE_Zh4T.js";/*!
- * destroy
- * Copyright(c) 2014 Jonathan Ong
- * Copyright(c) 2015-2022 Douglas Christopher Wilson
- * MIT Licensed
- */var t=e.EventEmitter,c=e.ReadStream,f=e,i=e,g=r;function r(n,o){return p(n)?d(n):_(n)?u(n):y(n)&&n.destroy(),s(n)&&o&&(n.removeAllListeners("error"),n.addListener("error",a)),n}function d(n){n.destroy(),typeof n.close=="function"&&n.on("open",v)}function l(n){if(n._hadError===!0){var o=n._binding===null?"_binding":"_handle";n[o]={close:function(){this[o]=null}}}n.close()}function u(n){typeof n.destroy=="function"?n._binding?(n.destroy(),n._processing?(n._needDrain=!0,n.once("drain",b)):n._binding.clear()):n._destroy&&n._destroy!==f.Transform.prototype._destroy?n.destroy():n._destroy&&typeof n.close=="function"?(n.destroyed=!0,n.close()):n.destroy():typeof n.close=="function"&&l(n)}function y(n){return n instanceof f&&typeof n.destroy=="function"}function s(n){return n instanceof t}function p(n){return n instanceof c}function _(n){return n instanceof i.Gzip||n instanceof i.Gunzip||n instanceof i.Deflate||n instanceof i.DeflateRaw||n instanceof i.Inflate||n instanceof i.InflateRaw||n instanceof i.Unzip}function a(){}function b(){this._binding.clear()}function v(){typeof this.fd=="number"&&this.close()}export{g as d};
