@@ -6,12 +6,10 @@ import { Link } from "react-router-dom";
 
 
 
+
 export const ContactUs = () =>{
+   
  
-    function confirmForm(){
-        setCheck(!check)
-        setVisible(!isVisible)
-    }
     const[ wait , setWait ] = useState(5);
     const[ check , setCheck] = useState("no")
     const[ isVisible , setVisible ] = useState("no")
@@ -23,6 +21,17 @@ export const ContactUs = () =>{
         paese : "",
         provincia : ""
     })
+    const confirmForm = async () =>{
+      setCheck(!check)
+      setVisible(!isVisible)
+      
+      fetch('https://twener-server.onrender.com/message' ,{
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body:JSON.stringify(values)
+      })
+     
+  }
   
  
     const onChange = (e) =>{        
@@ -42,8 +51,7 @@ export const ContactUs = () =>{
         alert("please enter a city")
       }else checks++
       if(checks == 3){
-        console.log(values)
-
+        
         confirmForm()
         
    
