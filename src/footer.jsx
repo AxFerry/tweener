@@ -18,8 +18,8 @@ export const Footer = () =>{
                     <img src={logo} className="foot-info-logo-img"/>
                 </div>
                 <div className="foot-info-body">
-                    <p> Email : </p>
-                    <p> Telefono : </p>
+                    <p> Email :               <a href="mailto:gigimail123@gmail.com">gigimail123</a></p>
+                    <p> Telefono :          <a href="https://wa.me/3407677470">3407677470</a></p>
                     <p> N° partita iva  : </p>
                 </div>
 

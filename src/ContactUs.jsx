@@ -156,8 +156,8 @@ export const ContactUs = () =>{
           <img src={house} className="form-side-img" />
           <div className="form-side-text">
             <p><h2>I nostri contatti </h2></p>
-            <p className="form-side-p1"><a href="mailto:fcsspdev@gmail.com">E-mail</a> </p>
-            <p className="form-side-p2"><a href="https://wa.me/3479802711">whatsApp</a></p>
+            <p className="form-side-p1"><a href="mailto:gigimail123@gmail.com">E-mail</a> </p>
+            <p className="form-side-p2"><a href="https://wa.me/3407677470">whatsApp</a></p>
             <p className="form-side-p3"><a href="">Instagram</a> </p>
             <p className="form-slide-p4"><Link to="/gallery">guarda le foto</Link></p>
             

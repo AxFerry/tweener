@@ -10,7 +10,7 @@ export const Lost = () =>{
       
         return (
             <div data-theme={ isDark? "dark" : "light"}>
-                <div className="lost-wrap">
+                <div className="lost-wrap">gallery
                <img src="" alt="" />
                <div className="lost text"> Pagina non trovata </div>
                <p><Link to='/'>Home</Link></p>

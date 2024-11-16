@@ -2,6 +2,9 @@
 :root {
   --bacground-color : rgba(255,255,255);
   --text-color : rgba(0,0,0);
+  --logo-pri-color :#6a7985 ;
+  --logo-sec-color : rgb(50,67,94);
+  --logo-ter-color : rgba(0,0,0);
   --capital-color : rgb(17, 133, 2);
   --second-color : rgb(37, 184, 32);
   --switch-background : rgb(37, 76, 109);
@@ -24,6 +27,9 @@
   --text-color : rgba(255, 255, 255, 0.87);
   --capital-color : rgba(0,0,150);
   --second-color : rgb(45, 45, 235);
+  --logo-pri-color :rgb(50,67,94);
+  --logo-sec-color : #6a7985 ;
+  --logo-ter-color : rgb(255, 255, 255);
   --switch-background : rgb(49, 50, 65);
   --switch-body : black;
   color: var(--text-color);

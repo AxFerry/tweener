@@ -21,12 +21,14 @@
     height: 400px;
     width: 400px;
     overflow: hidden;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 
 }
 .service-card-img{
     object-fit: contain;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 
 }
 .service-card:hover{
@@ -98,3 +100,38 @@
 }
 
 
+@keyframes onScroll {
+    0%{
+        .service-card{
+            opacity: 1;
+            transform: translateX(0);
+            width: 100%;
+        }
+        .service-card-text{
+            height: 0%;
+        }
+
+      
+    }
+    100%{
+        .service-card{
+            opacity: 0;
+            width: 0%;
+            transform: translateX(-500px);
+        }
+        .service-card-text{
+            height: 100%;
+}
+
+    }
+    
+  }
+  @media all {
+    @supports (animation-timeline:scroll()){
+        .service-card {
+            animation: onScroll linear both ;
+            animation-timeline: scroll();
+        }
+    }
+    
+  }

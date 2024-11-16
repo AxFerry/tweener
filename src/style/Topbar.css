@@ -3,23 +3,12 @@
     position: relative;
     overflow: hidden;
     width: 100dvw;
-    height: 300px;
+    height: 400px;
   }
-  .top-title{
-    font-size: 3.5rem;
-    position: absolute;
-    top : 160px;
-    left: 30px;
-    color: rgb(6, 13, 46);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+
   .top-slogan{
     position: absolute;
-    top : 260px;
+    top : 350px;
     left: 45px;
     color: black;
     -webkit-touch-callout: none;
@@ -30,8 +19,8 @@
   }
   .top-logo-wrap{
     position: absolute;
-    top: 110px;
-    left: 250px;
+    top: 250px;
+    left: 350px;
     height :200px;
     width: 200px;
     overflow: hidden;

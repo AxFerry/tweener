@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    background-image: linear-gradient(var(--nav-background),black );
+    background-image: linear-gradient(var(--nav-background),var(--logo-sec-color) );
     color: var(--nav-color);
     display: flex;
     justify-content: space-between;

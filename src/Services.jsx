@@ -1,7 +1,6 @@
 import { useState } from "react"
-import ex1 from "./assets/esagono1.png"
-import ex2 from "./assets/esagono2.png"
-import ex3 from "./assets/esagono3.png"
+import ex1 from "./assets/room2.jpg"
+import ex2 from "./assets/room3.jpg"
 import "./style/Services.css"
 import { Link } from "react-router-dom"
 
@@ -11,7 +10,7 @@ export const Services = () => {
  
     return(
         <div className="service-wrap">
-            <h2 className="service-wrap-title"> I Nostri servizi :</h2>
+            
             <div className="service-card"  name="installazione" >
                 <div className="service-card-img-wrap">
                     <img src={ex1} className="service-card-img" name="installazione"  />
