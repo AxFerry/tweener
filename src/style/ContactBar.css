@@ -23,6 +23,7 @@
     .contact-bar-wrap{
         position: fixed;
         bottom:0;
+         z-index: 10;
          width: 100dvw;
          height: 50px;
          overflow: hidden;
