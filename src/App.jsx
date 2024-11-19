@@ -7,6 +7,7 @@ import { ContactUs } from "./ContactUs"
 import { Footer } from "./footer"
 import { ServExpl } from './ServExpl'
 import { Services } from "./Services"
+import { ContactBar } from './ContactBar'
 import  { useLocalStorage} from "use-local-storage"
 
 
@@ -29,6 +30,7 @@ export const App= () => {
        <TopBar />
        <Services />
       <ContactUs />
+      <ContactBar />
       <Footer />
       </div>
       </>

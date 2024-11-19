@@ -6,6 +6,7 @@ import { Navbar } from "./Navbar";
 import { ContactUs } from "./ContactUs";
 import { Footer } from "./footer";
 import { TopBar } from "./TopBar";
+import { ContactBar } from './ContactBar'
 import "./style/ServExpl.css"
 
 export const AppInstal= () => {
@@ -32,6 +33,7 @@ export const AppInstal= () => {
                 </div>
             </div>
         <ContactUs />
+        <ContactBar />
         <Footer />
         </div>
         </>

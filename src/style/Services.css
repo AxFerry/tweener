@@ -31,9 +31,7 @@
     height: 100%;
 
 }
-.service-card:hover{
-    scale: 1.2;
-}
+
 .service-card:hover .service-card-img{
 
     animation: fade 300ms ease-in-out forwards;
@@ -58,11 +56,12 @@
     justify-content: space-around;
     overflow: hidden;
     transition: height 300ms ease-in-out;
-    background-color: rgba(41, 68, 224, 0.2);
+    background-color: var(--logo-pri-color)
 }
 @media screen and (max-width : 600px){
 
     .service-wrap{
+        width: 95dvw;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -70,6 +69,11 @@
     }
 
     .service-card{
+        margin-left: 5dvw;
+        width: 90dvw;
+        height: 90dvw;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
         margin-top: 30px;
     }
 }

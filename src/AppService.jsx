@@ -5,6 +5,8 @@ import { TopBar } from './TopBar'
 import { ServExpl } from "./ServExpl"
 import { Footer } from "./footer"
 import { Services } from "./Services"
+import { ContactBar } from './ContactBar'
+
 import  { useLocalStorage} from "use-local-storage"
 
 
@@ -29,6 +31,7 @@ export const AppService = () => {
        <TopBar />
        <Services />
        <ServExpl/>
+       <ContactBar />
      
       <Footer />
       </div>

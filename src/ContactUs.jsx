@@ -63,7 +63,7 @@ export const ContactUs = () =>{
     return (
         <div className="form-wrap-wrap">
         <div className="formWrap">
-            <h2 data-check={check? "no": "ok"}>Per un sopralluogo gratuito contattaci o compila il form :</h2>
+            <h2 data-check={check? "no": "ok"}>Per un sopralluogo gratuito contattaci o compila il form </h2>
             <form data-check={check? "no": "ok"} onSubmit={handleSubmit}>
                      
               <div className="inputwrap">

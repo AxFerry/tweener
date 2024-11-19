@@ -2,6 +2,7 @@ import { Carousel } from "./carousel";
 import { Navbar } from "./Navbar";
 import { TopBar } from "./TopBar";
 import { Footer } from "./footer";
+import { ContactBar } from './ContactBar'
 import { ContactUs } from "./ContactUs";
 import { useEffect, useState } from "react";
 import useLocalStorage from "use-local-storage";
@@ -23,6 +24,7 @@ export const AppGallery= () => {
          <TopBar />
          <Carousel/>
         <ContactUs />
+        <ContactBar />
         <Footer />
         </div>
         </>

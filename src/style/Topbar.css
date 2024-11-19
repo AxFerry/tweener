@@ -3,13 +3,21 @@
     position: relative;
     overflow: hidden;
     width: 100dvw;
-    height: 400px;
+    height: 300px;
+    object-position: start; 
+    
   }
+  .top-wrap-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
 
   .top-slogan{
     position: absolute;
-    top : 350px;
-    left: 45px;
+    top : 265px;
+    left: 65px;
     color: black;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -19,8 +27,8 @@
   }
   .top-logo-wrap{
     position: absolute;
-    top: 250px;
-    left: 350px;
+    top: 150px;
+    left: 550px;
     height :200px;
     width: 200px;
     overflow: hidden;
@@ -32,6 +40,23 @@
     object-fit: contain;
   }
 
+  @media screen and (max-width : 600px){
+    .top-wrap{
+      width: 300dvw;
+      object-position: start;
+     
+    }
+    .top-wrap-img{
+      object-fit: cover;
 
-
-  
+    }
+    .top-logo-wrap{
+      translate: -150%;
+      scale: 0.8;
+    }
+    .top-slogan{
+      translate: -15% 10px;
+    }
+   
+   
+  }

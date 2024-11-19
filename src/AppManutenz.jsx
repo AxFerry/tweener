@@ -4,6 +4,7 @@ import casa2 from "./assets/casa2.png"
 import { Navbar } from "./Navbar";
 import { ContactUs } from "./ContactUs";
 import { Footer } from "./footer";
+import { ContactBar } from './ContactBar'
 import { TopBar } from "./TopBar";
 import "./style/ServExpl.css"
 
@@ -31,6 +32,7 @@ export const AppManutenz= () => {
                 </div>
             </div>
         <ContactUs />
+        <ContactBar />
         <Footer />
         </div>
         </>
